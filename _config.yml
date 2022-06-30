@@ -3,15 +3,14 @@
 # 2. config.build.yml
 # 3. config.yml
 
-name: Yeoman.io
-description: Yeoman website
+name: MolexUI
+description: MolexUI website
 author:
-  name: Yeoman Team
+  name: MolexUI Team
 
-url: https://yeoman.io
+url: https://molexui.github.io
 atom_path: /blog/atom.xml
 
-source: app
 destination: .tmp
 include:
 - _redirects
