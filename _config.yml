@@ -1,0 +1,30 @@
+# Jekyll configuration precedence:
+# 1. Gruntfile task
+# 2. config.build.yml
+# 3. config.yml
+
+name: Yeoman.io
+description: Yeoman website
+author:
+  name: Yeoman Team
+
+url: https://yeoman.io
+atom_path: /blog/atom.xml
+
+source: app
+destination: .tmp
+include:
+- _redirects
+
+# _config.build.yml sets future and show_drafts to false on `grunt build`
+future: true
+show_drafts: true
+
+permalink: /blog/:title.html
+
+paginate: 8
+paginate_path: /blog/page:num
+
+plugins:
+- jekyll-paginate
+- jekyll-redirect-from
